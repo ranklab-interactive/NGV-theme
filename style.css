@@ -416,7 +416,7 @@ body {
 
 body {
   background: #fff;
-  color: #222;
+  color: #172d3c;
   cursor: auto;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -1852,12 +1852,12 @@ button, .button {
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #e0a020;
+  border-color: #b48019;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #b48019; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
@@ -1924,18 +1924,18 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #008CBA;
-    border-color: #007095;
+    background-color: #e0a020;
+    border-color: #b48019;
     color: #FFFFFF;
     box-shadow: none;
     cursor: default;
     opacity: 0.7; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #007095; }
+      background-color: #b48019; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: #FFFFFF; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #008CBA; }
+      background-color: #e0a020; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
       border-color: #b9b9b9;
@@ -3285,7 +3285,7 @@ label.error {
     border-color: #d8d8d8;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
-    background: #ecfaff;
+    background: #fdf9f2;
     color: #333333; }
     .panel.callout > :first-child {
       margin-top: 0; }
@@ -3299,9 +3299,9 @@ label.error {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a:not(.button) {
-      color: #008CBA; }
+      color: #e0a020; }
       .panel.callout a:not(.button):hover, .panel.callout a:not(.button):focus {
-        color: #0078a0; }
+        color: #c18a1b; }
   .panel.radius {
     border-radius: 3px; }
 
@@ -3558,7 +3558,7 @@ table {
   max-width: 100%;
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
+    box-shadow: 0 0 6px 1px rgba(224, 160, 32, 0.5); }
   .th.radius {
     border-radius: 3px; }
 
@@ -3719,11 +3719,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #e0a020;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #c18a1b; }
   a img {
     border: none; }
 
@@ -3745,7 +3745,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #172d3c;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3754,7 +3754,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #6f6f6f;
+    color: #407ea8;
     font-size: 60%;
     line-height: 0; }
 
@@ -3778,7 +3778,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #407ea8;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -3874,7 +3874,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #172d3c;
   cursor: help; }
 
 abbr {
@@ -3890,17 +3890,17 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #326283; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #326283; }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #407ea8; }
 
 /* Microformats */
 .vcard {
@@ -4496,10 +4496,65 @@ th.hide-for-touch {
         transition: color, 0.5s, ease-in;
         color: #0e76bc; }
 
+#home-hero {
+  background: url(style/images/home-hero.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 0; }
+  #home-hero .content {
+    margin-bottom: 7.5rem; }
+    #home-hero .content > * {
+      color: #FFF; }
+
+.blue-boxes > * {
+  padding: 2.5rem 1.5rem !important; }
+
+#home-quality {
+  background: #fafafa url(style/images/parents-fade.jpg) no-repeat center left;
+  background-size: contain; }
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -.1rem;
+  line-height: 1.2; }
+
+.hero {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem; }
+
+.light-bl-bx {
+  background: rgba(75, 149, 199, 0.95); }
+
+.bl-bx {
+  background: rgba(14, 118, 188, 0.95); }
+
+.dark-bl-bx {
+  background: rgba(10, 86, 137, 0.95); }
+
+.light-grey-bx {
+  background: #fafafa; }
+
+.content {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .content p:last-child {
+    margin-bottom: 0; }
+
+.statement-tier {
+  background: #fafafa url(style/images/ngv-icon-fade.png) no-repeat center center; }
+  .statement-tier p {
+    text-align: center;
+    font-size: 1.25rem; }
+    .statement-tier p:last-child {
+      margin-bottom: 0; }
+
 .page-footer {
   background: #172d3c url(style/images/footer-logo-bg.jpg) no-repeat right bottom;
-  background-size: contain;
-  padding-top: 5rem;
-  padding-bottom: 2.5rem; }
+  background-size: contain; }
+  .page-footer h4, .page-footer p {
+    color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */

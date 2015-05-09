@@ -5,7 +5,9 @@ Version: v1
 */
 
 @import "normalize";
+@import "variables"; 
+@import "settings";
 @import "foundation";
 @import "css3-mixins";
-@import "variables"; 
 @import "layout"; 
+

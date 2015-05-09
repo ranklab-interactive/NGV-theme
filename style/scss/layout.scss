@@ -56,6 +56,80 @@
 
 // home
 
+#home-hero {
+	background: url(style/images/home-hero.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	padding-bottom: 0;
+	.content {
+		margin-bottom: 7.5rem;
+		>* {
+			color: #FFF;
+		} 
+	}
+}
+
+.blue-boxes{
+	>* { 
+		padding: 2.5rem 1.5rem!important;
+	}
+}
+
+#home-quality {
+	background: $light-grey url(style/images/parents-fade.jpg) no-repeat center left;
+	background-size: contain;
+}
+
+// universal
+
+h1 {
+	font-size: 2.75rem;
+	font-weight: 700;
+	letter-spacing: -.1rem;
+	line-height: 1.2;
+}
+
+.hero {
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
+}
+
+.light-bl-bx {
+	background: rgba(75, 149, 199, .95);
+}
+
+.bl-bx {
+	background: rgba(14, 118, 188, .95);
+}
+
+.dark-bl-bx {
+	background: rgba(10, 86, 137, .95);
+}
+
+.light-grey-bx {
+	background: $light-grey;
+}
+
+.content {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.statement-tier {
+	background: $light-grey url(style/images/ngv-icon-fade.png) no-repeat center center;
+	p {
+		text-align: center;
+		font-size: 1.25rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
 
 
 // footer
@@ -63,8 +137,9 @@
 .page-footer {
 	background: $dark-blue url(style/images/footer-logo-bg.jpg) no-repeat right bottom;
 	background-size: contain;
-	padding-top: 5rem;
-	padding-bottom: 2.5rem;
+	h4, p {
+		color: #FFF;
+	}
 }
 
 

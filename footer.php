@@ -1,12 +1,26 @@
 <footer class="page-footer" role="footer">
-	<!-- logo -->
-	<div class="logo-footer">
-		<a href="<?php echo home_url(); ?>">
-			<!-- <img src="<?php echo get_template_directory_uri(); ?>/style/images/logo.png" alt="Logo" class="logo-footer"> -->
-		</a>
-	</div>
-	<!-- /logo -->
-    <div id="copyright">&copy;<?//php echo date("Y "); echo stripslashes(get_option('ranklab_copyright')); ?></div>
+    <div class="row content">
+        <div class="large-3 columns">
+            <h4>Treatment Links</h4>
+        </div>
+        <div class="large-3 columns">
+            <h4>About us</h4>
+        </div>
+        <div class="large-6 columns text-right">
+            <!-- logo -->
+            <div class="logo-footer">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/style/images/ngv-logo-footer.png" alt="Logo" class="logo-footer">
+                </a>
+            </div>
+            <!-- /logo -->                
+            <div>
+                888.123.4567
+            </div>
+            <p>Address 123 Ave Florida, Florida 12345</p>
+            <div id="copyright">&copy;<?php echo date("Y "); echo stripslashes(get_option('ranklab_copyright')); ?></div>
+        </div>
+    </div>	
 </footer>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/scripts.js"></script>
