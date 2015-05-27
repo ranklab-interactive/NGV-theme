@@ -1,6 +1,6 @@
 <?php
 // Ranklab Admin
-include_once(TEMPLATEPATH . '/library/functions/setup_files/ranklab-admin.php');
+// include_once(TEMPLATEPATH . '/library/functions/setup_files/ranklab-admin.php');
 
 //Ranklab Pagination
 function ranklab_pagination() {

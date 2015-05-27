@@ -15,7 +15,7 @@
 			font-size: .75rem;
 			line-height: 2.4;
 			float: left; 
-			&:hover {
+			&:hover, &:focus {
 				@include transition(color, .5s, ease-in); 
 				color: $orange;
 			}
@@ -45,10 +45,15 @@
 			font-weight: 700;			
 			letter-spacing: -.075rem;
   			font-size: 1.5rem;
-  			&:hover {
+  			&:hover, &:focus {
 				@include transition(color, .5s, ease-in); 
 				color: $brand-blue;
 			}
+		}
+	}
+	.current_page_item {
+		a {
+			color: $brand-blue;
 		}
 	}
 }
@@ -64,21 +69,104 @@
 	background-size: cover;	
 	padding-bottom: 0;
 	.content {
-		margin-bottom: 7.5rem;
-		>* {
+		@extend .below-6;		
+	}
+	h1 {
 			color: #FFF;
-		} 
+	} 
+	p {
+		color: $light-grey;
 	}
 }
 
-.blue-boxes{
-	>* { 
-		padding: 2.5rem 1.5rem!important;
-	}
-}
 
 #home-quality {
 	background: $light-grey url(style/images/parents-fade.jpg) no-repeat center left;
+	background-size: contain;
+}
+
+
+// templates
+
+#treatment-hero {
+	background: url(style/images/treatment-banner.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+#about-hero {
+	background: url(style/images/about-banner.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+}
+
+#contact-hero {
+	background: url(style/images/contact-banner.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+}
+
+#facility-hero {
+	background: url(style/images/contact-banner.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+	@extend .pad-b0;
+	padding-top: 2.5rem;
+	.facility-tour {
+		position: relative;
+		@extend .below-5;
+		top: 5rem;
+
+	}
+}
+
+#teen-male-bg {
+	background: url(style/images/teen-male-bg.jpg) no-repeat bottom right; 
+}
+
+#admissions-hero {
+	background: url(style/images/admissions-banner.jpg) no-repeat top center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	padding-bottom: 0;
+	.content {
+		@extend .below-6;
+	}	
+}
+
+.facility-tour {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: flex;
+	-webkit-align-items: center;
+	align-items: center;	
+	>* {
+		-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  		width: 20%;            /* For old syntax, otherwise collapses. */
+  		float: left;
+  		-webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  		-ms-flex: 1;  
+		flex: 1;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}	
+}
+
+#questions {
+	background: $light-grey url(style/images/questions-bg.jpg) no-repeat center left;
 	background-size: contain;
 }
 
@@ -91,13 +179,54 @@ h1 {
 	line-height: 1.2;
 }
 
+.leading {
+	font-size: 1.375rem;
+	line-height: 1.6;
+	margin-bottom: 1.75rem;
+	margin-top: .75rem;
+}
+
 .hero {
 	padding-top: 7.5rem;
 	padding-bottom: 7.5rem;
 }
 
+.blue-boxes{
+	>* { 
+		padding: 2.5rem 1.5rem!important;
+	}
+	p {
+		color: $light-grey;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		color: #FFF;
+	}
+}
+
+a.outline {
+	background: none;
+	border: 1px solid #FFF;
+	color: #FFF;
+	&:hover, &:focus {
+		@include transition(color, .5s, ease-in); 
+		color: $brand-blue;
+		@include transition(background, .5s, ease-in); 
+		background: #FFF;
+	}
+	&.blue {
+		border: 1px solid $brand-blue;
+		color: $brand-blue;
+		&:hover, &:focus {
+			@include transition(color, .5s, ease-in); 
+			color: #FFF;
+			@include transition(background, .5s, ease-in); 
+			background: $brand-blue;
+		}
+	}
+}
+
 .light-bl-bx {
-	background: rgba(75, 149, 199, .95);
+	background: rgba(75, 149, 199, .95);	
 }
 
 .bl-bx {
@@ -112,13 +241,83 @@ h1 {
 	background: $light-grey;
 }
 
-.content {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-	p:last-child {
-		margin-bottom: 0;
+.orange-bx {
+	background: $orange;
+}
+
+.outline-bx {
+	border: 1px solid $grey;
+	.title-tier	{
+		background: $light-grey;
+		border-bottom: 1px solid $grey;
+		h4 {
+			margin: 0;
+			padding: 1rem;
+			font-size: 1.125rem;
+			font-weight: 700;
+			letter-spacing: -.05rem;
+			text-align: center;
+		}
+	}
+	.inner-content {
+		padding: 1.5rem;
+	}
+	ul.resources {
+		margin: 0;
+		list-style: none;
+		li {
+			border-bottom: 1px solid $grey;
+			padding: 1rem 1.5rem;
+			display: table;
+			width: 100%;
+			&:last-child {
+				border-bottom: none;
+			}
+			&:before {
+				content: url(style/images/resource-icon.png);				
+				float: left;
+				margin-right: .5rem;
+				position: relative;
+				top: .2rem;
+			}
+			a {
+				float: left;
+				color: $brand-blue;
+				width: 90%;
+				&:after {
+					content: ' »'
+				}
+				&:hover, &:focus {
+					@include transition(color, .5s, ease-in); 
+					color: $dark-blue; 					
+				}				
+			}
+		}
 	}
 }
+
+.cta-bx {
+	text-align: center;
+	padding: 1.5rem;
+	p {
+		color: $light-grey;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		color: #FFF;
+		&:before {
+			content: url(style/images/tree-icon.png);
+			display: block;				
+		}
+	}
+}
+
+.content {
+	@extend .pad-lv5,.pad-r0, .pad-l0;
+	*:last-child {
+		margin-bottom: 0!important;
+	}
+}
+
 
 .statement-tier {
 	background: $light-grey url(style/images/ngv-icon-fade.png) no-repeat center center;
@@ -130,6 +329,77 @@ h1 {
 		}
 	}
 }
+
+blockquote {
+	text-align: center;
+	font-size: 2.25rem;
+	font-weight: 700;
+	letter-spacing: -.15rem;
+	line-height: 1.2;
+	&:before {
+		content: '“';
+		margin-left: -1.75rem;
+	}
+	&:after {
+		content: '”';
+	}
+}
+
+.checkmark {		
+	list-style-image: url(style/images/orange-check.png);
+	margin-left: 1.5rem;
+	li {
+		display: list-item;
+		list-style: inherit;
+	}			
+}
+
+
+// spacing
+
+.nopadding {padding: 0!important;}
+
+.nomargin {margin: 0!important;}
+
+.pad-lv1 {padding: .5rem;}
+.pad-lv2 {padding: .75rem;}
+.pad-lv3 {padding: 1.25rem;}
+.pad-lv4 {padding: 2.5rem;}
+.pad-lv5 {padding: 5rem;}
+.pad-lv6 {padding: 7.5rem;}
+
+.pad-t0 {padding-top: 0!important;}
+.pad-t1 {padding-top: .5rem;}
+.pad-t2 {padding-top: .75rem;}
+.pad-t3 {padding-top: 1.25rem;}
+.pad-t4 {padding-top: 2.5rem;}
+.pad-t5 {padding-top: 5rem;}
+.pad-t6 {padding-top: 6rem;}
+
+.pad-b0 {padding-bottom: 0!important;}
+.pad-l0 {padding-left: 0!important;}
+.pad-r0 {padding-right: 0!important;}
+
+
+.mar-lv1 {margin: .5rem;}
+.mar-lv2 {margin: .75rem;}
+.mar-lv3 {margin: 1.25rem;}
+.mar-lv4 {margin: 2.5rem;}
+.mar-lv5 {margin: 5rem;}
+.mar-lv6 {margin: 7.5rem;}
+
+.mar-t0 {margin-top: 0!important;}
+.mar-b0 {margin-bottom: 0!important;}
+.mar-l0 {margin-left: 0!important;}
+.mar-r0 {margin-right: 0!important;}
+
+.below-1 {margin-bottom: .5rem;}
+.below-2 {margin-bottom: .75rem;}
+.below-3 {margin-bottom: 1.25rem;}
+.below-4 {margin-bottom: 2.5rem;}
+.below-5 {margin-bottom: 5rem;}
+.below-6 {margin-bottom: 7.5rem;}
+
 
 
 // footer

@@ -4,258 +4,38 @@ Template Name: Formatting
 */
 ?>
 <?php get_header(); ?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/prism.css" />
+
+<section class="light-grey-bx content">
+	<div class="row">
+		<div class="small-12 columns">
+			<header id="page-id">
+				<h1><?php the_title(); ?></h1>
+				<?php get_template_part('library/includes/breadcrumbs'); ?>	
+			</header>		
+		</div>
+	</div>	
+</section>
+<section class="row content pattern-markup language-markup">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
-<div class="row">
-<div class="large-12 columns">
-<div id="content">
-<div id="left-content-block">
-<a name="nav"></a>
-<h2 data-magellan-destination="nav">Sticky Nav</h2>
-<p>This fixed-position navigation helps users keep track of where they are on a page without scrolling, after scrolling past the menu.</p>
-<div class="row">
-	<div class="large-6 columns">
-	<h3><small>Rendered</small></h3>
-		<div data-magellan-expedition="fixed">
-		  <dl class="sub-nav">
-		    <dd data-magellan-arrival="nav"><a href="#nav">Navigation</a></dd>
-		    <dd data-magellan-arrival="hds"><a href="#hds">Type</a></dd>
-		    <dd data-magellan-arrival="btns"><a href="#btns">Buttons</a></dd>
-		    <dd data-magellan-arrival="structure"><a href="#structure">Structure</a></dd>
-		    <dd data-magellan-arrival="content"><a href="#content">Content</a></dd>
-		    <dd data-magellan-arrival="media"><a href="#media">Media</a></dd>
-		    <dd data-magellan-arrival="calls"><a href="#calls">Callout & Prompts</a></dd>
-		  </dl>
-		</div>
-	</div>
-	<div class="large-6 columns">
-	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
-<div data-magellan-expedition="fixed">
-  <dl class="sub-nav">
-    <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
-    <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
-  </dl>
-</div>
-<h3 data-magellan-destination="arrival">Arrival</h3>
-<h3 data-magellan-destination="destination">Destination</h3>
-	</textarea></code>
-	</div>
-</div>	
-<h2>Sub-Nav</h2>
-<div class="row">
-	<div class="large-6 columns">
-	<h3><small>Rendered</small></h3>
-		<dl class="sub-nav">
-		  <dt>Filter:</dt>
-		  <dd class="active"><a href="#">All</a></dd>
-		  <dd><a rel="nofollow" href="#">Active</a></dd>
-		  <dd><a rel="nofollow" href="#">Pending</a></dd>
-		  <dd><a rel="nofollow" href="#">Suspended</a></dd>
-		</dl>
-	</div>
-	<div class="large-6 columns">
-	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
-<dl class="sub-nav">
-  <dt>Filter:</dt>
-  <dd class="active"><a href="#">All</a></dd>
-  <dd><a rel="nofollow" href="#">Active</a></dd>
-  <dd><a rel="nofollow" href="#">Pending</a></dd>
-  <dd><a rel="nofollow" href="#">Suspended</a></dd>
-</dl>
-	</textarea></code>
-	</div>
-</div>	
 
-<h2>Side Nav</h2>
-	<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Default</small></h3>
-			<ul class="side-nav">
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-			</ul>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<ul class="side-nav">
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a></li>
-  <li><a href="#">Link 3</a></li>
-  <li><a href="#">Link 4</a></li>
-</ul>
-			</textarea></code>
-		</div>
-	</div>
-<h2>Off Canvas Nav</h2>
-<h3>Basic</h3>
-	<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Default</small></h3>
-			<div class="off-canvas-wrap">
-			  <div class="inner-wrap">
-
-			    <a class="left-off-canvas-toggle" >Menu</a> 
-
-			    <!-- Off Canvas Menu -->
-			    <aside class="left-off-canvas-menu">
-			        <!-- whatever you want goes here -->
-			        <ul>
-			          <li><a href="#">Item 1</a></li>
-			        ...
-			        </ul>
-			    </aside>
-
-			    <!-- main content goes here -->
-			    <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-
-			  <!-- close the off-canvas menu -->
-			  <a class="exit-off-canvas"></a>
-
-			  </div>
-			</div>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<div class="off-canvas-wrap">
-  <div class="inner-wrap">
-
-    <a class="left-off-canvas-toggle" >Menu</a> 
-
-    <!-- Off Canvas Menu -->
-    <aside class="left-off-canvas-menu">
-        <!-- whatever you want goes here -->
-        <ul>
-          <li><a href="#">Item 1</a></li>
-        ...
-        </ul>
-    </aside>
-
-    <!-- main content goes here -->
-    <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
-
-  <!-- close the off-canvas menu -->
-  <a class="exit-off-canvas"></a>
-
-  </div>
-</div>
-			</textarea></code>
-		</div>
-	</div>
-<h3>Advanced</h3>
-<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Default</small></h3>
-			<div class="off-canvas-wrap">
-			  <div class="inner-wrap">
-			    <nav class="tab-bar">
-			      <section class="left-small">
-			        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-			      </section>
-
-			      <section class="middle tab-bar-section">
-			        <h1 class="title">Foundation</h1>
-			      </section>
-			    </nav>
-			    <aside class="left-off-canvas-menu">
-			      <ul class="off-canvas-list">
-			        <li><label>Foundation</label></li>
-			        <li><a href="#">The Psychohistorians</a></li>
-			        <li><a href="#">The Psychohistorians</a></li>
-			        <li><a href="#">The Psychohistorians</a></li>
-			      </ul>
-			    </aside>
-			    <section class="main-section">
-			      <p>Main content goes here</p>
-			      <p>Offcanvas menu to the left</p>
-			      <p>Lorem Ipsum</p>				   
-			    </section>
-			  <a class="exit-off-canvas"></a>
-			  </div>
-			</div>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<div class="off-canvas-wrap">
-  <div class="inner-wrap">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title">Foundation</h1>
-      </section>
-    </nav>
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
-        <li><a href="#">The Psychohistorians</a></li>
-        <li><a href="#">The Psychohistorians</a></li>
-        <li><a href="#">The Psychohistorians</a></li>
-      </ul>
-    </aside>
-    <section class="main-section">
-      <p>Main content goes here</p>
-      <p>Offcanvas menu to the left</p>
-      <p>Lorem Ipsum</p>				   
-    </section>
-  <a class="exit-off-canvas"></a>
-  </div>
-</div>
-			</textarea></code>
-		</div>
-	</div>		
-<hr>		
-<!-- OLD TOC
-<h2>Table of Contents</h2>
-<div class="toc">
-<h2>Find Fast</h2>
-<a href="">Link Title Here</a>
-<a href="">Link Title Here</a>
-<a href="">Link Title Here</a>
-</div><!-- end toc -->
-<!-- OLD TOC
-<code><textarea style="height:120px;">
-<div class="toc">
-<h2>Find Fast</h2>
-<a rel="nofollow" href="#">Link Title Here</a>
-<a rel="nofollow" href="#">Link Title Here</a>
-<a rel="nofollow" href="#">Link Title Here</a>
-</div><!-- end toc -->
-<!-- OLD TOC
-<a name=""></a> 
-</textarea></code>
-<hr> -->
-<a name="hds"></a>
-<h2 data-magellan-destination="hds">Sticky Nav</h2>
-<div class="row">
-	<div class="large-6 columns">
-	<h3><small>Rendered</small></h3>
-		<h1>h1. This is a very large header.</h1>
-		<h2>h2. This is a large header.</h2>
-		<h3>h3. This is a medium header.</h3>
-		<h4>h4. This is a moderate header.</h4>
-		<h5>h5. This is a small header.</h5>
-		<h6>h6. This is a tiny header.</h6>
-	</div>
-	<div class="large-6 columns">
-	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
 <h1>h1. This is a very large header.</h1>
 <h2>h2. This is a large header.</h2>
 <h3>h3. This is a medium header.</h3>
 <h4>h4. This is a moderate header.</h4>
 <h5>h5. This is a small header.</h5>
 <h6>h6. This is a tiny header.</h6>
-	</textarea></code>
-	</div>
-</div>
+
+<pre><code>
+&lt;h1&gt;h1. This is a very large header.&lt;/h1&gt;
+&lt;h2&gt;h2. This is a large header.&lt;/h2&gt;
+&lt;h3&gt;h3. This is a medium header.&lt;/h3&gt;
+&lt;h4&gt;h4. This is a moderate header.&lt;/h4&gt;
+&lt;h5&gt;h5. This is a small header.&lt;/h5&gt;
+&lt;h6&gt;h6. This is a tiny header.&lt;/h6&gt;
+</code></pre>
+
+
 
 <h2>Subheaders</h2>
 <div class="row">
@@ -270,14 +50,14 @@ Template Name: Formatting
 	</div>
 	<div class="large-6 columns">
 	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
+	<code>
 <h1 class="subheader">h1.subheader</h1>
 <h2 class="subheader">h2.subheader</h2>
 <h3 class="subheader">h3.subheader</h3>
 <h4 class="subheader">h4.subheader</h4>
 <h5 class="subheader">h5.subheader</h5>
 <h6 class="subheader">h6.subheader</h6>
-	</textarea></code>
+	</code>
 	</div>
 </div>
 
@@ -346,7 +126,7 @@ Template Name: Formatting
 	</div>
 	<div class="large-6 columns">
 	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
+	<pre><code><textarea>
 <ul class="disc">
 <li>List item with a much longer description or more content.</li>
 <li>List item</li>
@@ -361,7 +141,7 @@ Template Name: Formatting
 <li>List item</li>
 <li>List item</li>
 </ul>
-	</textarea></code>
+	</textarea></code></pre>
 	</div>
 </div>
 <div class="row">
@@ -1673,5 +1453,6 @@ Template Name: Formatting
 </div><!-- end content -->
 </div><!-- end wrapper div -->
 </div><!-- end inside div -->
-
+</section>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/prism.js"></script>
 <?php get_footer(); ?>

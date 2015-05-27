@@ -1,10 +1,10 @@
-<ul class="breadcrumbs" id="bread-wrapper">
+<ul class="breadcrumbs inline-list" id="bread-wrapper">
 <?php // Breadcrumb navigation
     if (is_page() && !is_front_page() || is_single() || is_category()) {
         echo '<li id="breadcrumb">';
         echo '<a href="'.get_bloginfo('url').'">Home</a>';
  		if (is_single()) {
-        	echo '<li><a href="/blog/">Blog</a></li>';	
+        	echo '<li><a href="'.get_bloginfo('url').'/blog/">Blog</a></li>';	
         }else{
         
         }

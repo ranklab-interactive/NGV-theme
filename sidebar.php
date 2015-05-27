@@ -4,7 +4,7 @@
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Default Sidebar') ) : ?>
 	<?php endif; ?>
 		
-<?php } elseif (is_page('contact') || $post->post_parent == '2') {	?>
+<?php } elseif (is_page('blog') || $post->post_parent == '2') {	?>
 	
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Default Sidebar') ) : ?>
 	<?php endif; ?>

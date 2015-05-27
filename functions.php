@@ -6,7 +6,7 @@ require_once (TEMPLATEPATH . '/library/functions/setup.php');
 require_once (TEMPLATEPATH . '/library/functions/ranklab-functions.php');
 
 //Frothy Features
-// require_once (TEMPLATEPATH . '/library/functions/ranklab-features.php');
+require_once (TEMPLATEPATH . '/library/functions/ranklab-features.php');
 
 //Frothy Comments
 require_once (TEMPLATEPATH . '/library/functions/ranklab-comments.php');

@@ -1,12 +1,17 @@
 <?php get_header(); ?>
-<div class="row">
-<section role="main" class="large-9 columns">
-<header id="page-id">
-	<h1><?php the_title(); ?></h1>
-	<?php get_template_part('library/includes/breadcrumbs'); ?>
-</header>
+<section class="light-grey-bx content">
+	<div class="row">
+		<div class="small-12 columns">
+			<header id="page-id">
+				<h1><?php the_title(); ?></h1>
+				<?php get_template_part('library/includes/breadcrumbs'); ?>	
+			</header>		
+		</div>
+	</div>	
+</section>
+<section class="row content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
-<article>
+<article role="main" class="large-9 columns">
 	<!-- post details -->
 	<div class="postmeta">
 		<p class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></p>
@@ -24,11 +29,9 @@
 	}
 	?>
 	<!-- end post thumbnail -->
-	<?php the_content(); ?>
-	<?php comments_template(); ?>
+	<?php the_content(); ?>	
 </article>
 <?php endwhile; endif; ?>
-</section>
 <?php get_sidebar(); ?>
-</div> <!-- #main -->
+</section>
 <?php get_footer(); ?>

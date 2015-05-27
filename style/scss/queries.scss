@@ -1,0 +1,50 @@
+@media #{$small-up} { 
+	.small-stack, .medium-stack {
+		.columns {
+			margin-bottom: 2.5rem;
+			&:last-child {
+				margin-bottom: initial;
+			}
+		}
+	}	
+}
+@media #{$small-only} { 
+	.facility-tour {
+		div {
+			display: none;
+		} 
+		div.orange-bx {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+@media #{$medium-up} { 
+	.small-stack {
+		.columns {
+			margin-bottom: initial;
+		}
+	}
+}
+@media #{$medium-only} {
+	.facility-tour .orange-bx {
+		flex: 5;
+		width: 80%
+	}
+}
+
+@media #{$large-up} {
+	.medium-stack {
+		.columns {
+			margin-bottom: initial;
+		}
+	}
+}
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
