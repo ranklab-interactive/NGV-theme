@@ -10,7 +10,8 @@ Template Name: Admissions
 		<div class="medium-10 medium-centered columns content text-center">
 			<h1>Lorem ipsum Admissions</h1>
 			<p class="leading">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			<a href="" class="button large" onclick="return SnapEngage.startLink();">Live Chat</a>
+			<a href="" class="button large below-2" onclick="return SnapEngage.startLink();">Live Chat</a>
+			<p class="white">100% Confidential</p>
 		</div>
 	</div>
 	<div class="row collapse blue-boxes" data-equalizer>

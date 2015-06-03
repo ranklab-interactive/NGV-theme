@@ -2,7 +2,7 @@
 <?php // Breadcrumb navigation
     if (is_page() && !is_front_page() || is_single() || is_category()) {
         echo '<li id="breadcrumb">';
-        echo '<a href="'.get_bloginfo('url').'">Home</a>';
+        echo '<a id="home-bread" href="'.get_bloginfo('url').'"></a>';
  		if (is_single()) {
         	echo '<li><a href="'.get_bloginfo('url').'/blog/">Blog</a></li>';	
         }else{
@@ -39,11 +39,13 @@
             
         }
         echo '</li>';
-    } elseif (is_front_page()) {
-        // Front page
-        echo '<li class="breadcrumbs">';
-        echo '<a href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
-        echo 'Home Page';
+    } elseif (is_front_page() || is_home()) {
+        // Front page or Home
+        echo '<li id="breadcrumb">';
+        echo '<a id="home-bread" href="'.get_bloginfo('url').'"></a>';
+        echo '</li>';
+        echo '<li>';
+        echo 'Blog';
         echo '</li>';
     }
 ?>

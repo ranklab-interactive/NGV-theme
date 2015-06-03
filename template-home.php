@@ -24,8 +24,10 @@ Template Name: Homepage
 			<a href="" class="button outline">Treatment Options</a>
 		</div>
 		<div class="medium-4 columns dark-bl-bx text-center" data-equalizer-watch>
-			<h3>Speak With Our Support Staff Now</h3>
-			<a href="" class="button large" onclick="return SnapEngage.startLink();">Live Chat</a>		
+			<h3 class="below-3">Speak With Our Support Staff Now</h3>
+			<a href="" class="button large below-2" onclick="return SnapEngage.startLink();">Live Chat</a>		
+			<p>100% Confidential</p>
+
 		</div>
 	</div>
 </section>
@@ -50,34 +52,34 @@ Template Name: Homepage
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 	</div>		
 	<div class="row small-stack" data-equalizer="program" data-equalizer-mq="medium-up">
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 	</div>
 </section>
@@ -109,25 +111,26 @@ Template Name: Homepage
 				We Offer Insurance Options
 			</h3>
 			<img src="<?php echo get_template_directory_uri(); ?>/style/images/insurance-small.jpg" alt="Insurance Logos" class="pad-lv3 pad-r0 pad-l0"><br>
-			<a href="">Insurance Link</a>
+			<a class="stand-alone" href="">Insurance Link</a>
 		</div>
 		<div class="large-6 columns">
 			<h3>
 				Accreditations & Memberships
 			</h3>
 			<img src="<?php echo get_template_directory_uri(); ?>/style/images/accreditations-home.jpg" alt="Accreditation Logos" class="pad-lv3 pad-r0 pad-l0"><br>
-			<a href="">Meet our Staff</a>
+			<a class="stand-alone" href="">Meet our Staff</a>
 		</div>
 	</div>	
 </section>
 
 <section class="light-grey-bx">
-	<div id="home-quality" class="row content">
+	<div id="quality-tier" class="row content">
 		<div class="large-8 large-push-4 medium-10 medium-push-2 small-12 columns">
 			<h2>
 				You Deserve Quality Care
 			</h2>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo. </p>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>
+			<a href="" class="right button orange">Admissions</a>
 		</div>
 	</div>
 </section>

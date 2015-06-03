@@ -82,48 +82,48 @@ Template Name: Treatment
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 	</div>		
 	<div class="row small-stack" data-equalizer="program" data-equalizer-mq="medium-up">
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 		 <div class="medium-4 columns" data-equalizer-watch="program">
 		 	<h4>Program Title</h4>
 		 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-		 	<a href="">Treatment Link</a>
+		 	<a class="stand-alone" href="">Treatment Link</a>
 		 </div>
 	</div>
 </section>
  
 <section class="light-grey-bx">
 	<div id="questions" class="row content">
-		<div class="large-7 large-push-3 medium-9 small-12 columns">
+		<div class="large-9 large-push-3 medium-9 small-12 columns">
 			<h2>You've got Questions, We've got Answers</h2>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo. </p>			
-		</div>
-		<div class="large-2 medium-3 columns text-center">
-			<a href="" class="button" onclick="return SnapEngage.startLink();">Live Chat</a>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo. </p>					
+		<div class="right text-center">
+			<a href="" class="button below-2" onclick="return SnapEngage.startLink();">Live Chat</a>
+			<p class="smaller green">100% Confidential</p>
 		</div>
 	</div>
 </section>
 
-<?php get_footer(); ?> home
+<?php get_footer(); ?>

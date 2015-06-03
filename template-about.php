@@ -10,7 +10,10 @@ Template Name: About
 		<div class="large-6 medium-8 columns">
 			<h1>About Us</h1>
 			<p class="leading">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			<a href="" class="button large" onclick="return SnapEngage.startLink();">Live Chat</a>
+			<div class="left">
+				<a href="" class="button large below-2" onclick="return SnapEngage.startLink();">Live Chat</a>
+				<p class="smaller white text-center">100% Confidential</p>
+			</div>
 		</div> 
 	</div>	
 </section>

@@ -19,72 +19,596 @@ Template Name: Formatting
 <section class="row content pattern-markup language-markup">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
 
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Buttons</h4>
+	</div>
+	<div class="inner-content row">
+		<div class="pad-lv4 left">		
+			<a href="" class="button">Primary/Chat Button</a>
+		</div>
+		<div class="pad-lv4 left">		
+			<a href="" class="button orange">Secondary Button</a>
+		</div>	
+		<div class="pad-lv4 left">
+			<a href="" class="outline blue button">Outline Button</a>
+		</div>	
+		<div class="bl-bx pad-lv4 left">
+			<a href="" class="outline button">Outline Button for Dark Bg</a>
+		</div>
+	</div>
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#buttons">Reveal HTML Code</a>
+		    <div id="buttons" class="content">
+<pre><code>
+&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Primary/Chat Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button orange&quot;&gt;Secondary Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline blue button&quot;&gt;Outline Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline button&quot;&gt;Outline Button for Dark Bg&lt;/a&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Chat Button</h4>
+	</div>
+	<div class="inner-content row">
+		<div class="pad-lv4 text-center">		
+			<a href="" class="button large" onclick="return SnapEngage.startLink();">Live Chat</a>		
+		</div>			
+	</div>
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#chat-button">Reveal HTML Code</a>
+		    <div id="chat-button" class="content">
+<pre><code>
+&lt;a href=&quot;&quot; class=&quot;button large&quot; onclick=&quot;return SnapEngage.startLink();&quot;&gt;Live Chat&lt;/a&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Standalone Link</h4>
+	</div>
+	<div class="inner-content row">
+		<div class="pad-lv4 text-center">		
+			<a href="" class="stand-alone">Stand alone link</a>		
+		</div>			
+	</div>
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#stand-alone">Reveal HTML Code</a>
+		    <div id="stand-alone" class="content">
+<pre><code>
+&lt;a href=&quot;&quot; class=&quot;stand&#45;alone&quot;&gt;Stand alone link&lt;/a&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Button Sizes</h4>
+	</div>
+	<div class="inner-content row">
+		<div class="pad-lv2 left">		
+			<a href="" class="tiny button">Tiny Button</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="small button">Small Button</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="button">Regular</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="large button">Large Button</a>
+		</div>
+	</div>
+	<div class="inner-content row">
+		<div class="pad-lv2 left">		
+			<a href="" class="tiny outline blue button">Tiny Button</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="small outline blue button">Small Button</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="outline blue button">Regular</a>
+		</div>	
+		<div class="pad-lv2 left">
+			<a href="" class="outline blue large button">Large Button</a>
+		</div>
+	</div>
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#button-sizes">Reveal HTML Code</a>
+		    <div id="button-sizes" class="content">
+<pre><code>
+&lt;a href=&quot;&quot; class=&quot;tiny button&quot;&gt;Tiny Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;small button&quot;&gt;Small Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Regular&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;large button&quot;&gt;Large Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline blue tiny button&quot;&gt;Tiny Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline blue small button&quot;&gt;Small Button&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline blue button&quot;&gt;Regular&lt;/a&gt;
+&lt;a href=&quot;&quot; class=&quot;outline blue large button&quot;&gt;Large Button&lt;/a&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Boxes + Background Colors</h4>
+	</div>
+	<div class="light-bl-bx pad-lv4">
+		<p>Light Blue</p>
+	</div>
+	<div class="bl-bx pad-lv4">
+		<p>Blue</p>
+	</div>
+	<div class="dark-bl-bx pad-lv4">
+		<p>Dark Blue</p>
+	</div>
+	<div class="orange-bx pad-lv4">
+		<p>Orange</p>
+	</div>
+	<div class="light-grey-bx pad-lv4">
+		<p>Light Grey</p>
+	</div>	
+	<div class="row">
+		<div class="pad-lv3">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-navigation">
+			    <a href="#boxes">Reveal HTML Code</a>
+			    <div id="boxes" class="content">
+<pre><code>
+&lt;div class=&quot;light&#45;bl&#45;bx&quot;&gt;
+	&lt;!&#45;&#45; Light Blue Box &#45;&#45;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bl&#45;bx&quot;&gt;
+	&lt;!&#45;&#45; Blue Box &#45;&#45;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dark&#45;bl&#45;bx&quot;&gt;
+	&lt;!&#45;&#45; Dark Blue Box &#45;&#45;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;orange&#45;bx&quot;&gt;
+	&lt;!&#45;&#45; Orange Box &#45;&#45;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;light&#45;grey&#45;bx&quot;&gt;
+	&lt;!&#45;&#45; Light Grey Box &#45;&#45;&gt;
+&lt;/div&gt;
+</code></pre>
+			    </div>
+			  </li>
+			</ul>		
+		</div>
+	</div>
+</div>
+
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Blue Shade Equal Height Boxes</h4>
+	</div>
+	<div class="row collapse blue-boxes" data-equalizer>
+		<div class="medium-4 columns light-bl-bx" data-equalizer-watch>
+			<h3>How We Can Help</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>
+			<a href="" class="button outline">Quality Care</a>
+		</div>
+		<div class="medium-4 columns bl-bx" data-equalizer-watch>
+			<h3>How We Can Help</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>
+			<a href="" class="button outline">Quality Care</a>
+		</div>
+		<div class="medium-4 columns dark-bl-bx" data-equalizer-watch>
+			<h3>How We Can Help</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>
+			<a href="" class="button outline">Quality Care</a>					
+		</div>
+	</div>	
+	<div class="row">
+		<div class="pad-lv3">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-navigation">
+			    <a href="#blue-shades">Reveal HTML Code</a>
+			    <div id="blue-shades" class="content">
+<pre><code>
+&lt;div class=&quot;row collapse blue&#45;boxes&quot; data&#45;equalizer&gt;
+	&lt;div class=&quot;medium&#45;4 columns light&#45;bl&#45;bx&quot; data&#45;equalizer&#45;watch&gt;
+		&lt;h3&gt;How We Can Help&lt;/h3&gt;
+		&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.&lt;/p&gt;
+		&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Quality Care&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;medium&#45;4 columns bl&#45;bx&quot; data&#45;equalizer&#45;watch&gt;
+		&lt;h3&gt;How We Can Help&lt;/h3&gt;
+		&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.&lt;/p&gt;
+		&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Quality Care&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;medium&#45;4 columns dark&#45;bl&#45;bx&quot; data&#45;equalizer&#45;watch&gt;
+		&lt;h3&gt;How We Can Help&lt;/h3&gt;
+		&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.&lt;/p&gt;
+		&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Quality Care&lt;/a&gt;					
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+			    </div>
+			  </li>
+			</ul>		
+		</div>
+	</div>
+</div>
+
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>CTA Boxes</h4>
+	</div>
+	<div class="row pad-t3 below-4">
+		<div class="medium-4 medium-push-2 columns">
+			<div class="orange-bx cta-bx">
+				<h3>Take a Tour</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. </p>
+				<a href="" class="button outline">Tour our Facility</a>
+			</div>
+		</div>
+		<div class="medium-4 medium-pull-2 columns">
+			<div class="bl-bx cta-bx">
+				<h3>Take a Tour</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. </p>
+				<a href="" class="button outline">Tour our Facility</a>
+			</div>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="medium-4 medium-push-2 columns">
+			<div class="dark-bl-bx cta-bx">
+				<h3>Take a Tour</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. </p>
+				<a href="" class="button outline">Tour our Facility</a>
+			</div>
+		</div>	
+		<div class="medium-4 medium-pull-2 columns">
+			<div class="light-bl-bx cta-bx">
+				<h3>Take a Tour</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. </p>
+				<a href="" class="button outline">Tour our Facility</a>
+			</div>
+		</div>	
+	</div>	
+	<div class="row">
+		<div class="pad-lv3">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-navigation">
+			    <a href="#cta-boxes">Reveal HTML Code</a>
+			    <div id="cta-boxes" class="content">
+<pre><code>
+&lt;div class=&quot;orange&#45;bx  cta&#45;bx&quot;&gt;
+	&lt;h3&gt;Take a Tour&lt;/h3&gt;
+	&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. &lt;/p&gt;
+	&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Tour our Facility&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bl&#45;bx cta&#45;bx&quot;&gt;
+	&lt;h3&gt;Take a Tour&lt;/h3&gt;
+	&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. &lt;/p&gt;
+	&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Tour our Facility&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dark&#45;bl&#45;bx cta&#45;bx&quot;&gt;
+	&lt;h3&gt;Take a Tour&lt;/h3&gt;
+	&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. &lt;/p&gt;
+	&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Tour our Facility&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;light&#45;bl&#45;bx cta&#45;bx&quot;&gt;
+	&lt;h3&gt;Take a Tour&lt;/h3&gt;
+	&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem et quasi explicabo. &lt;/p&gt;
+	&lt;a href=&quot;&quot; class=&quot;button outline&quot;&gt;Tour our Facility&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+			    </div>
+			  </li>
+			</ul>		
+		</div>
+	</div>
+</div>
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Box with Header</h4>
+	</div>
+	<div class="row">
+		<div class="outline-bx mar-lv4">
+			<div class="title-tier">
+				<h4>Title</h4>
+			</div>
+			<div class="inner-content">
+				<p>Inner Content goes here</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pad-lv3">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-navigation">
+			    <a href="#box-header">Reveal HTML Code</a>
+			    <div id="box-header" class="content">
+<pre><code>
+&lt;div class=&quot;outline&#45;bx&quot;&gt;
+	&lt;div class=&quot;title&#45;tier&quot;&gt;
+		&lt;h4&gt;Title&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;inner&#45;content&quot;&gt;
+		&lt;p&gt;Inner Content goes here&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+			    </div>
+			  </li>
+			</ul>		
+		</div>
+	</div>
+</div>
+
+<div class="outline-bx below-4">
+	<div class="title-tier">
+		<h4>Special Lists</h4>
+	</div>
+	<div class="row">
+		<ul class="resources large-6 columns pad-lv4">
+			<li><a href="">Resource Title Link</a></li>
+			<li><a href="">Resource Title Link</a></li>
+			<li><a href="">Resource Title Link</a></li>
+			<li><a href="">Resource Title Link</a></li>
+			<li><a href="">Resource Title Link</a></li>
+		</ul>
+		<div class="large-6 columns pad-lv4">
+			<ul class="checkmark">
+				<li>Sed ut perspiciatis unde omnis iste natus error</li>
+				<li>Sit voluptatem accusantium</li>
+				<li>Totam rem aperiam</li>
+				<li>Eaque ipsa quae ab illo</li> 
+				<li>Inventore veritatis et quasi</li>
+				<li>Lorem Ipsum Dolor</li>
+				<li>Inventore veritatis et quasi</li>
+				<li>Lorem Ipsum Dolor</li>		
+			</ul>
+		</div>
+	</div>
+	<div class="row pad-lv4">
+		<div class="medium-10 medium-centered columns">
+			<ul class="large-block-grid-2 medium-block-grid-2 small-block-grid-1 checkmark">
+				<li>Sed ut perspiciatis unde omnis iste natus error</li>
+				<li>Sit voluptatem accusantium</li>
+				<li>Totam rem aperiam</li>
+				<li>Eaque ipsa quae ab illo</li> 
+				<li>Inventore veritatis et quasi</li>
+				<li>Lorem Ipsum Dolor</li>
+				<li>Sit amen laborum</li>
+				<li>Sed ut perspiciatis unde omnis iste natus error</li>
+				<li>Sit voluptatem accusantium</li>
+				<li>Totam rem aperiam</li>
+				<li>Eaque ipsa quae ab illo</li> 
+				<li>Inventore veritatis et quasi</li>
+				<li>Lorem Ipsum Dolor</li>
+				<li>Sit amen laborum</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row pad-lv4">
+		<div class="medium-10 medium-centered columns">
+			<div class="outline-bx">
+				<div class="title-tier">
+					<h4>For Parents</h4>
+				</div>
+				<ul class="resources">
+					<li><a href="">Resource Title Link</a></li>
+					<li><a href="">Resource Title Link</a></li>
+					<li><a href="">Resource Title Link</a></li>
+					<li><a href="">Resource Title Link</a></li>
+					<li><a href="">Resource Title Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pad-lv3">
+			<ul class="accordion" data-accordion>
+			  <li class="accordion-navigation">
+			    <a href="#special-lists">Reveal HTML Code</a>
+			    <div id="special-lists" class="content">
+<pre><code>
+&lt;!&#45;&#45; Resources List &#45;&#45;&gt;
+&lt;ul class=&quot;resources &quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;Resource Title Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!&#45;&#45; Checkmark List &#45;&#45;&gt;
+&lt;ul class=&quot;checkmark&quot;&gt;
+	&lt;li&gt;Sed ut perspiciatis unde omnis iste natus error&lt;/li&gt;	
+&lt;/ul&gt;
+&lt;!&#45;&#45; 2 Column Checkmark List &#45;&#45;&gt;
+&lt;ul class=&quot;large&#45;block&#45;grid&#45;2 medium&#45;block&#45;grid&#45;2 small&#45;block&#45;grid&#45;1 checkmark&quot;&gt;
+	&lt;li&gt;2 Column Checkmark List&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!&#45;&#45; Boxed Resources List &#45;&#45;&gt;
+&lt;div class=&quot;outline&#45;bx&quot;&gt;
+	&lt;div class=&quot;title&#45;tier&quot;&gt;
+		&lt;h4&gt;Box Title&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;ul class=&quot;resources&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;&quot;&gt;Resource List in Box&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+			    </div>
+			  </li>
+			</ul>		
+		</div>
+	</div>
+</div>
+
+<section class="statement-tier below-2">
+	<div class="row content">
+		<div class="small-12 medium-11 medium-centered large-10 columns">
+			<p><strong>Seeking help?</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>
+		</div>
+	</div>				
+</section>
+
+<div class="row below-4">
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#statement-tier">Reveal HTML Code</a>
+		    <div id="statement-tier" class="content">
+<pre><code>
+&lt;section class=&quot;statement&#45;tier&quot;&gt;
+	&lt;div class=&quot;row content&quot;&gt;
+		&lt;div class=&quot;small&#45;12 medium&#45;11 medium&#45;centered large&#45;10 columns&quot;&gt;
+			&lt;p&gt;&lt;strong&gt;Seeking help?&lt;/strong&gt; Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;				
+&lt;/section&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<section class="light-grey-bx below-2">
+	<div id="quality-tier" class="row content">
+		<div class="large-8 large-push-4 medium-10 medium-push-2 small-12 columns">
+			<h2>
+				You Deserve Quality Care
+			</h2>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.</p>			
+		</div>
+	</div>
+</section>
+<div class="row below-4">
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#quality">Reveal HTML Code</a>
+		    <div id="quality" class="content">
+<pre><code>
+&lt;section class=&quot;light&#45;grey&#45;bx&quot;&gt;
+	&lt;div id=&quot;quality-tier&quot; class=&quot;row content&quot;&gt;
+		&lt;div class=&quot;large&#45;8 large&#45;push&#45;4 medium&#45;10 medium&#45;push&#45;2 small&#45;12 columns&quot;&gt;
+			&lt;h2&gt;
+				You Deserve Quality Care
+			&lt;/h2&gt;
+			&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.&lt;/p&gt;			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<section class="light-grey-bx">
+	<div id="questions" class="row content">
+		<div class="large-9 large-push-3 medium-9 small-12 columns">
+			<h2>You've got Questions, We've got Answers</h2>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo. </p>							
+	</div>
+</section>
+<div class="row below-4">
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#questions-tier">Reveal HTML Code</a>
+		    <div id="questions-tier" class="content">
+<pre><code>
+&lt;section class=&quot;light&#45;grey&#45;bx&quot;&gt;
+	&lt;div id=&quot;questions&quot; class=&quot;row content&quot;&gt;
+		&lt;div class=&quot;large&#45;9 large&#45;push&#45;3 medium&#45;9 small&#45;12 columns&quot;&gt;
+			&lt;h2&gt;You&#39;ve got Questions, We&#39;ve got Answers&lt;/h2&gt;
+			&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo. &lt;/p&gt;							
+	&lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+<section id="teen-male-bg" class="row content">
+	<div class="large-8 columns">
+		<h2>Our Success with Teens</h2>
+		<p class="leading">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+		<a href="" class="button outline blue">What makes us different</a>
+	</div>
+</section>
+<div class="row below-4">
+	<div class="pad-lv3">
+		<ul class="accordion" data-accordion>
+		  <li class="accordion-navigation">
+		    <a href="#teen-male">Reveal HTML Code</a>
+		    <div id="teen-male" class="content">
+<pre><code>
+&lt;section id=&quot;teen&#45;male&#45;bg&quot; class=&quot;row content&quot;&gt;
+	&lt;div class=&quot;large&#45;8 columns&quot;&gt;
+		&lt;h2&gt;Our Success with Teens&lt;/h2&gt;
+		&lt;p class=&quot;leading&quot;&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.&lt;/p&gt;
+		&lt;a href=&quot;&quot; class=&quot;button outline blue&quot;&gt;What makes us different&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+		    </div>
+		  </li>
+		</ul>		
+	</div>
+</div>
+
+
+<div class="row">
 <h1>h1. This is a very large header.</h1>
 <h2>h2. This is a large header.</h2>
 <h3>h3. This is a medium header.</h3>
 <h4>h4. This is a moderate header.</h4>
 <h5>h5. This is a small header.</h5>
 <h6>h6. This is a tiny header.</h6>
+</div>
 
-<pre><code>
+<ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#panel1a">Code</a>
+    <div id="panel1a" class="content">
+      	<pre><code>
 &lt;h1&gt;h1. This is a very large header.&lt;/h1&gt;
 &lt;h2&gt;h2. This is a large header.&lt;/h2&gt;
 &lt;h3&gt;h3. This is a medium header.&lt;/h3&gt;
 &lt;h4&gt;h4. This is a moderate header.&lt;/h4&gt;
 &lt;h5&gt;h5. This is a small header.&lt;/h5&gt;
 &lt;h6&gt;h6. This is a tiny header.&lt;/h6&gt;
-</code></pre>
+		</code></pre>
+    </div>
+  </li>
+</ul>
 
 
-
-<h2>Subheaders</h2>
-<div class="row">
-	<div class="large-6 columns">
-	<h3><small>Rendered</small></h3>
-		<h1 class="subheader">h1.subheader</h1>
-		<h2 class="subheader">h2.subheader</h2>
-		<h3 class="subheader">h3.subheader</h3>
-		<h4 class="subheader">h4.subheader</h4>
-		<h5 class="subheader">h5.subheader</h5>
-		<h6 class="subheader">h6.subheader</h6>
-	</div>
-	<div class="large-6 columns">
-	<h3><small>HTML</small></h3>
-	<code>
-<h1 class="subheader">h1.subheader</h1>
-<h2 class="subheader">h2.subheader</h2>
-<h3 class="subheader">h3.subheader</h3>
-<h4 class="subheader">h4.subheader</h4>
-<h5 class="subheader">h5.subheader</h5>
-<h6 class="subheader">h6.subheader</h6>
-	</code>
-	</div>
-</div>
-
-<h2>Small header segments</h2>
-<div class="row">
-	<div class="large-6 columns">
-	<h3><small>Rendered</small></h3>
-		<h1>h1. <small>Small segment header.</small></h1>
-		<h2>h2. <small>Small segment header.</small></h2>
-		<h3>h3. <small>Small segment header.</small></h3>
-		<h4>h4. <small>Small segment header.</small></h4>
-		<h5>h5. <small>Small segment header.</small></h5>
-		<h6>h6. <small>Small segment header.</small></h6>
-	</div>
-	<div class="large-6 columns">
-	<h3><small>HTML</small></h3>
-	<code><textarea style="height:120px;">
-<h1>h1. <small>Small segment header.</small></h1>
-<h2>h2. <small>Small segment header.</small></h2>
-<h3>h3. <small>Small segment header.</small></h3>
-<h4>h4. <small>Small segment header.</small></h4>
-<h5>h5. <small>Small segment header.</small></h5>
-<h6>h6. <small>Small segment header.</small></h6>
-	</textarea></code>
-	</div>
-</div>
-<hr>
 <h2>Text Align Classes</h2>
 <div class="row">
 	<div class="large-6 columns">
@@ -344,38 +868,6 @@ Template Name: Formatting
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Radius</small></h3>
-			<a href="#" class="button tiny radius">Tiny Radius</a><br />
-			<a href="#" class="button small radius">Small Radius</a><br />
-			<a href="#" class="button large radius">Large Radius</a>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<a href="#" class="button tiny radius">Tiny Radius</a>
-<a href="#" class="button small radius">Small Radius</a>
-<a href="#" class="button large radius">Large Radius</a>
-			</textarea></code>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Round</small></h3>
-			<a href="#" class="button tiny round">Tiny Round</a><br />
-			<a href="#" class="button small round">Small Round</a><br />
-			<a href="#" class="button large round">Large Round</a>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<a href="#" class="button tiny round">Tiny Round</a>
-<a href="#" class="button small round">Small Round</a>
-<a href="#" class="button large round">Large Round</a>
-			</textarea></code>
-		</div>
 	</div>	
 
 <div class="row">
@@ -419,32 +911,12 @@ Template Name: Formatting
 				<li><a href="#" class="button">Button 1</a></li>
 				<li><a href="#" class="button">Button 2</a></li>
 				<li><a href="#" class="button">Button 3</a></li>
-			</ul>
-			<ul class="button-group radius">
-				<li><a href="#" class="button">Button 1</a></li>
-				<li><a href="#" class="button">Button 2</a></li>
-				<li><a href="#" class="button">Button 3</a></li>
-			</ul>
-			<ul class="button-group round">
-				<li><a href="#" class="button">Button 1</a></li>
-				<li><a href="#" class="button">Button 2</a></li>
-				<li><a href="#" class="button">Button 3</a></li>
-			</ul>
+			</ul>		
 		</div>
 		<div class="large-6 columns">
 			<h3><small>HTML</small></h3>	
 			<code><textarea style="height:120px;">
 <ul class="button-group">
-  <li><a href="#" class="button">Button 1</a></li>
-  <li><a href="#" class="button">Button 2</a></li>
-  <li><a href="#" class="button">Button 3</a></li>
-</ul>
-<ul class="button-group radius">
-  <li><a href="#" class="button">Button 1</a></li>
-  <li><a href="#" class="button">Button 2</a></li>
-  <li><a href="#" class="button">Button 3</a></li>
-</ul>
-<ul class="button-group round">
   <li><a href="#" class="button">Button 1</a></li>
   <li><a href="#" class="button">Button 2</a></li>
   <li><a href="#" class="button">Button 3</a></li>
@@ -804,42 +1276,7 @@ Template Name: Formatting
 		</div>
 </div>
 <hr>
-<h2>Progress Bars</h2>
-<div class="row">
-		<div class="large-6 columns">
-			<h3><small>Default</small></h3>
-				<div class="progress">
-  					<span class="meter"></span>
-				</div>
-				<div class="progress">
-  					<span class="meter" style="width: 80%"></span>
-				</div>
-				<div class="progress radius">
-  					<span class="meter" style="width: 50%"></span>
-				</div>
-				<div class="progress round">
-  					<span class="meter" style="width: 75%"></span>
-				</div>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<div class="progress">
-  <span class="meter"></span>
-</div>
-<div class="progress">
-  <span class="meter" style="width: 80%"></span>
-</div>
-<div class="progress radius">
-  <span class="meter" style="width: 50%"></span>
-</div>
-<div class="progress round">
-  <span class="meter" style="width: 75%"></span>
-</div>
-			</textarea></code>
-		</div>
-</div>
-<hr>
+
 <h2>Accordion</h2>
 <p>
 	You can create an accordion using minimal markup like so:
@@ -870,7 +1307,7 @@ Template Name: Formatting
 		</div>
 		<div class="large-6 columns">
 			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
+			<pre><code>
 <dl class="accordion" data-accordion>
   <dd>
 	<a href="#panel1">Accordion 1</a>
@@ -891,37 +1328,11 @@ Template Name: Formatting
     </div>
   </dd>
 </dl>					
-			</textarea></code>
+			</code></pre>
 		</div>		
 </div>		
 
-<!-- OLD ACCORDION 
-<h2>Accordion OLD</h2>
-<div class="accordion">		
-<h3>Feature Title Here<span class="plus">+</span></h3>
-<div>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-</div>
 
-<h3>Feature Title Here<span class="plus">+</span></h3>
-<div>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-</div>
-</div>
-<code><textarea style="height:300px;">
-<div class="accordion">		
-<h3>Feature Title Here<span class="plus">+</span></h3>
-<div>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-</div>
-
-<h3>Feature Title Here<span class="plus">+</span></h3>
-<div>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-</div>
-</div>
-</textarea></code> -->
-<hr>
 <h2>Tabs</h2>
 <p>
 	You can create a group of horizontal tabs using minimal markup.
@@ -1029,164 +1440,7 @@ Template Name: Formatting
 		</div>		
 </div>	
 		
-<!-- <h2>Tabs OLD</h2>
-<div class="content-tabs">
-<div class="menu-wrapper">
-  <ul class="tab-menu">
-    <li class="one"><a href="#" class="current">Tab One</a></li>
-	<li class="two"><a href="#" class="">Tab Two</a></li>
-	<li class="three"><a href="#" class="">Tab Three</a></li>
-  </ul>
-</div> --><!-- end menu-wrapper -->
-<!-- <div class="tab-content-wrapper">
-	<div class="one dynamic" >
-	   <h3>Lorem Ipsum Dolor Sit Amit</h3>
-	   <p>tab one content</p>
-	</div> --><!-- end one dynamic -->
-	<!-- <div class="two dynamic" style="display:none;">
-	   tab two content
-	</div> --><!-- end one dynamic -->
-	<!-- <div class="three dynamic" style="display:none;">
-	   tab three content
-	</div> --><!-- end one dynamic -->
-<!-- </div> --><!-- end tab-content-wrapper -->
-<!-- </div> --><!-- end tabs -->
 
-<!-- <code><textarea style="height:350px;">
-<div class="content-tabs">
-<div class="menu-wrapper">
-  <ul class="tab-menu">
-    <li class="one"><a href="#" class="current">Tab One</a></li>
-	<li class="two"><a href="#" class="">Tab Two</a></li>
-	<li class="three"><a href="#" class="">Tab Three</a></li>
-  </ul>
-</div> --><!-- end menu-wrapper -->
-<!-- <div class="tab-content-wrapper">
-	<div class="one dynamic" >
-		<h3>Lorem Ipsum Dolor Sit Amit</h3>
-	   	<p>tab one content</p>
-	</div> --><!-- end one dynamic -->
-	<!-- <div class="two dynamic" style="display:none;">
-	   tab two content
-	</div> --><!-- end one dynamic -->
-	<!-- <div class="three dynamic" style="display:none;">
-	   tab three content
-	</div> --><!-- end one dynamic -->
-<!-- </div> --><!-- end tab-content-wrapper -->
-<!-- </div> --><!-- end tabs -->
-<!-- </textarea></code> -->
-<hr>	
-<a name="media"></a>
-<h2 data-magellan-destination="media">Image Slider</h2>
-<p>
-	requires minimal HTML markup to function. Our Javascript takes care of most of the heavy lifting for you. The only thing you need to do is add a ul data-orbit element to your page. You can then populate it with images, text, and captions. Here's the markup required to implement a basic Orbit slider on your page:
-</p>
-<div class="row">
-		<div class="large-6 columns" style="line-height:2rem;">
-		<h3><small>Rendered</small></h3>
-			<ul class="example-orbit" data-orbit>
-			  <li>
-			    <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
-			    <div class="orbit-caption">
-			      Caption One.
-			    </div>
-			  </li>
-			  <li>
-			    <img src="http://placehold.it/1000x300/EE964D/fff" alt="slide 2" />
-			    <div class="orbit-caption">
-			      Caption Two.
-			    </div>
-			  </li>
-			  <li>
-			    <img src="http://placehold.it/1000x300/FDC43D/fff" alt="slide 3" />
-			    <div class="orbit-caption">
-			      Caption Three.
-			    </div>
-			  </li>
-			</ul> 
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<ul class="example-orbit" data-orbit>
-  <li>
-    <img src="http://placehold.it/1000x300/A92B48/fff" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
-    </div>
-  </li>
-  <li>
-    <img src="http://placehold.it/1000x300/EE964D/fff" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="http://placehold.it/1000x300/FDC43D/fff" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>
- 			</textarea></code>
-		</div>		
-</div>
-
-<h2>Content Slider</h2>
-<p>
-	 Can also be used with just content and no images.
-</p>
-<div class="row">
-		<div class="large-6 columns" style="line-height:2rem;">
-		<h3><small>Rendered</small></h3>
-			<ul data-orbit style="padding:50px;">
-			  <li data-orbit-slide="headline-1">
-			    <div>
-			      <h2>Headline 1</h2>
-			      <h3>Subheadline</h3>
-			    </div>
-			  </li>
-			  <li data-orbit-slide="headline-2">
-			    <div>
-			      <h2>Headline 2</h2>
-			      <h3>Subheadline</h3>
-			    </div>
-			  </li>
-			  <li data-orbit-slide="headline-3">
-			    <div>
-			      <h2>Headline 3</h2>
-			      <h3>Subheadline</h3>
-			    </div>
-			  </li>
-			</ul>
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<ul data-orbit>
-  <li data-orbit-slide="headline-1">
-    <div>
-      <h2>Headline 1</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-2">
-    <div>
-      <h2>Headline 2</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-  <li data-orbit-slide="headline-3">
-    <div>
-      <h2>Headline 3</h2>
-      <h3>Subheadline</h3>
-    </div>
-  </li>
-</ul>
- 			</textarea></code>
-		</div>		
-</div>
-<hr>
 <h2>Thumbnails</h2>
 <p>
 	Add class "th" to an img or a element.
@@ -1430,23 +1684,7 @@ Template Name: Formatting
 			</textarea></code>
 		</div>
 </div>
-<hr>
-<h2>Tooltips</h2>
-<p>
-	Tooltips are a quick way to provide extended information on a term or action on a page. The tooltips can be positioned on the "tip-bottom", which is the default position, "tip-top", "tip-left", or "tip-right" of the target element by adding the appropriate class to them. You can even add your own custom class to style each tip differently. On a small device, the tooltips are full-width and bottom aligned.
-</p>
-<div class="row">
-		<div class="large-6 columns" style="line-height:2rem;">
-		<h3><small>Rendered</small></h3>
-			<span data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them!">extended information</span>			 
-		</div>
-		<div class="large-6 columns">
-			<h3><small>HTML</small></h3>	
-			<code><textarea style="height:120px;">
-<span data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them!">Hover on desktop or touch me on mobile!</span>					
-			</textarea></code>
-		</div>		
-</div>				
+
 	
 </div><!-- end left-content_block -->
 <?php endwhile; endif; ?>
